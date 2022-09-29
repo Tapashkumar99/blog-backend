@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 const withDB = async (operations, res) => {
   try {
     const client = await MongoClient.connect(
-      "mongodb+srv://Tapash:Tapash99@cluster0.ft5eult.mongodb.net/?retryWrites=true&w=majority",
+      "mongodb+srv://Tapash:Tapash99@cluster0.tzt4vur.mongodb.net/?retryWrites=true&w=majority",
       { useUnifiedTopology: true, useNewUrlParser: true }
     );
     const db = client.db("my-blog");
